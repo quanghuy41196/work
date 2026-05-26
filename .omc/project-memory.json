@@ -1,0 +1,161 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1779782792398,
+  "projectRoot": "e:\\build\\hanoiwork",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "15.3.1",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.0.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.0.0",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "yarn",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "yarn build",
+    "testCommand": null,
+    "lintCommand": "yarn lint",
+    "devCommand": "yarn dev",
+    "scripts": {
+      "dev": "next dev --turbopack",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "lint:fix": "next lint --fix",
+      "type-check": "tsc --noEmit",
+      "type-check:watch": "tsc --noEmit --watch",
+      "prettier": "npx prettier src --check",
+      "prettier:fix": "npm run prettier -- --write",
+      "prepare": "husky",
+      "pre-commit": "lint-staged",
+      "test:types": "tsc --noEmit && echo 'TypeScript check passed!'",
+      "check-all": "npm run type-check && npm run lint && npm run prettier",
+      "setup": "node scripts/setup.js",
+      "clean": "rm -rf .next && rm -rf node_modules/.cache",
+      "typecheck": "tsc --noEmit"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "messages": {
+      "path": "messages",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1779782792356,
+      "keyFiles": [
+        "en.json",
+        "vi.json"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 0,
+      "lastAccessed": 1779782792356,
+      "keyFiles": []
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 1,
+      "lastAccessed": 1779782792376,
+      "keyFiles": [
+        "setup.js"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1779782792376,
+      "keyFiles": [
+        "auth.ts",
+        "middleware.ts"
+      ]
+    },
+    "src\\app": {
+      "path": "src\\app",
+      "purpose": "Application code",
+      "fileCount": 5,
+      "lastAccessed": 1779782792378,
+      "keyFiles": [
+        "error.tsx",
+        "favicon.ico",
+        "layout.tsx"
+      ]
+    },
+    "src\\assets": {
+      "path": "src\\assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1779782792378,
+      "keyFiles": [
+        "react.svg"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1779782792379,
+      "keyFiles": []
+    },
+    "src\\lib": {
+      "path": "src\\lib",
+      "purpose": "Library code",
+      "fileCount": 1,
+      "lastAccessed": 1779782792379,
+      "keyFiles": [
+        "redis.ts"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
