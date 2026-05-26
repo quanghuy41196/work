@@ -46,8 +46,6 @@ const TOOLBAR_FMT = [
 
 function NoteEditor({ title, onBack }: { title: string; onBack: () => void }) {
     const [noteTitle, setNoteTitle] = useState(title)
-    const [bodyEmpty, setBodyEmpty] = useState(true)
-
     return (
         <div className="flex flex-col flex-1 overflow-hidden">
             {/* Breadcrumb */}
@@ -175,7 +173,7 @@ function NoteEditor({ title, onBack }: { title: string; onBack: () => void }) {
                         <div
                             contentEditable
                             suppressContentEditableWarning
-                            onInput={e => setBodyEmpty((e.currentTarget.textContent ?? '').length === 0)}
+                            onInput={() => {}}
                             className="w-full min-h-[300px] text-sm text-gray-700 outline-none empty:before:content-[attr(data-placeholder)] empty:before:text-gray-300"
                             data-placeholder="Ấn '/' để nhận lệnh..."
                         />

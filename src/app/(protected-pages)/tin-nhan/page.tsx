@@ -736,7 +736,7 @@ function CreateTaskModal({ onClose }: { onClose: () => void }) {
                                 { Icon: HiUsers, label: 'Phối hợp', placeholder: 'Thêm đơn vị phối hợp' },
                                 { Icon: HiCalendar, label: 'Thời hạn', placeholder: 'Thêm thời hạn' },
                                 { Icon: HiTag, label: 'Nhãn dán', placeholder: 'Thêm nhãn dán' },
-                            ] as const).map(({ Icon, label, value, placeholder, isTag }: any) => (
+                            ]).map(({ Icon, label, value, placeholder, isTag }) => (
                                 <div key={label} className="flex items-center gap-3 py-2.5 border-b border-gray-100 last:border-0">
                                     <Icon className="w-4 h-4 text-gray-400 shrink-0" />
                                     <span className="text-sm text-gray-500 w-24 shrink-0">{label}</span>
